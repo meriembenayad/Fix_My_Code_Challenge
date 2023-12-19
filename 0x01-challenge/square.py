@@ -8,7 +8,10 @@ class Square():
     height = 0
 
     def __init__(self, *args, **kwargs):
-        """ Loop through the keyword arguments and set the corresponding attribute """
+        """
+            Loop through the keyword arguments
+            and set the corresponding attribute
+        """
         for key, value in kwargs.items():
             setattr(self, key, value)
 
