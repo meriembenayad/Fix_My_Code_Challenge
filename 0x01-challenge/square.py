@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" class Square """
+"""Class Square"""
 
 
 class Square():
@@ -15,7 +15,7 @@ class Square():
         for key, value in kwargs.items():
             setattr(self, key, value)
 
-    def area_of_my_square(self):
+    def AreaOfMySquare(self):
         """ Area of the square """
         return self.width * self.height
 
@@ -35,5 +35,5 @@ if __name__ == "__main__":
 
     s = Square(width=9, height=9)
     print(s)
-    print(s.area_of_my_square())
+    print(s.AreaOfMySquare())
     print(s.PermiterOfMySquare())
