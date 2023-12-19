@@ -1,26 +1,26 @@
 #!/usr/bin/python3
-""" class Square """
+"""Class Square."""
 
 
 class Square():
-    """ Modules square """
+    """Modules square."""
     width = 0
     height = 0
 
     def __init__(self, *args, **kwargs):
         """
-            Loop through the keyword arguments
-            and set the corresponding attribute
+        Loop through the keyword arguments
+        and set the corresponding attribute
         """
         for key, value in kwargs.items():
             setattr(self, key, value)
 
     def area_of_my_square(self):
-        """ Area of the square """
+        """Area of the Square."""
         return self.width * self.height
 
     def perimeter_of_my_square(self):
-        """ Permiter of the square """
+        """Permiter of the Square"""
         return (self.width * 2) + (self.height * 2)
 
     def __str__(self):
